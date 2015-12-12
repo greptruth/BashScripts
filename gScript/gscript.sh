@@ -55,6 +55,7 @@ function _commit()
 		if [[ $REPLY = [yY] || $REPLY = "" ]]
 			then
 					git add .
+					echo "Enter message for commit:"
 					read message
 					git commit -m "message"
 					git push origin master
